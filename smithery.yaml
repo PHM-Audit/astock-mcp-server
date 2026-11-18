@@ -1,0 +1,12 @@
+# Smithery configuration for astock-mcp-server
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties: {}
+  commandFunction: |-
+    (config) => ({
+      "command": "python",
+      "args": ["server.py"],
+      "env": {}
+    })
